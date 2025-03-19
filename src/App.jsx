@@ -23,6 +23,9 @@ import ComponentesForm from './ComponentesForm/ComponentesForm';
 import Desafio6 from './Desafio6/Desafio6';
 import AppHook from './Hooks.useForm/AppHook';
 import Desafio7 from './Desafio7/Desafio7';
+import Animations from './Animations/Animations';
+import Slide from './Slide/Slide';
+import Imagem from './Imagem/Imagem';
 
 const Teste = () => {
   const active = true;
@@ -32,6 +35,21 @@ const Teste = () => {
     return null;
   }
 };
+
+const slides = [
+  {
+    id: 'slide1',
+    text: 'Slide 1',
+  },
+  {
+    id: 'slide2',
+    text: 'Slide 2',
+  },
+  {
+    id: 'slide3',
+    text: 'Slide 3',
+  },
+];
 
 const App = () => {
   return (
@@ -61,6 +79,9 @@ const App = () => {
       <Desafio6 />
       <AppHook />
       <Desafio7 />
+      <Animations />
+      <Slide slides={slides} />
+      <Imagem />
     </>
   );
 };
