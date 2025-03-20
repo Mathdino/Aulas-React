@@ -26,6 +26,7 @@ import Desafio7 from './Desafio7/Desafio7';
 import Animations from './Animations/Animations';
 import Slide from './Slide/Slide';
 import Imagem from './Imagem/Imagem';
+//import Router from './Router/router';
 
 const Teste = () => {
   const active = true;
@@ -82,6 +83,7 @@ const App = () => {
       <Animations />
       <Slide slides={slides} />
       <Imagem />
+      {/* <Router /> */}
     </>
   );
 };
